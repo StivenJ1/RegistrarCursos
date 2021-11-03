@@ -1,0 +1,50 @@
+<body>
+
+  <aside>
+    <div class="container tabla1">
+    <div class="card carta2">
+      <div class="card carta">
+        <div class="card-body fg">
+          <div class="as">
+            <span class="h3 text-info">Bienvenido usuario: {{email}}</span></div>
+
+          <table class="table table-striped">
+            <thead class="tableHead">
+              <tr>
+                <th class="tableHead">Curso</th>
+                <th class="tableHead">Id</th>
+                <th class="tableHead">Profesor</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let curso of cursos">
+                <td>{{curso.curso}}</td>
+                <td>{{curso.codigo}}</td>
+                <td>{{curso.profesor}}</td>
+                <td>
+                  <i class="fas fa-edit fa-lg text-info icono" [routerLink]="['/editarCurso/',curso.id]"></i>
+                  <i (click)="eliminarCursos(curso.id)" class="fas fa-trash fa-lg text-danger"></i>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  </aside>
+
+
+  <div class="container borde1">
+    <div class="card contenedor">
+      <button routerLink="/visualizar" type="button" class="btn btn-outline-info visualizar">Registrar Cursos</button>
+      <button routerLink="/signup" type="button" class="btn btn-outline-info registrar">Registrar Estudiante</button>
+      <button routerLink="/visualizar" type="button" class="btn btn-outline-info registrar">Registrar Profesor</button>
+      <button routerLink="/registrarCursos" type="button" class="btn btn-outline-info registrar">Inscribir
+        Curso</button>
+    </div>
+  </div>
+
+
+</body>

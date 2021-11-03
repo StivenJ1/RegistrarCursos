@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "registrarcursos": {
+      "hosting": {
+        "RegistrarCurso": [
+          "registrarcursos"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "registrarcursos"
+  }
+}

@@ -1,0 +1,28 @@
+<body>
+  <aside>
+    <div class="form-container">
+      <h2>Registrar Estudiante</h2>
+      <form #formData='ngForm' (ngSubmit)="onSubmit(formData); formData.reset()">
+        <input type="text" placeholder="Email address" (ngModel)="email" name="email" class="input-txt" required>
+        <input type="password" placeholder="Password" (ngModel)="password" name="password" class="input-txt" required>
+        <input type="text" placeholder="codigo" (ngModel)="password" name="codigo" class="input-txt" required>
+        <input type="text" placeholder="nombre" (ngModel)="nombre" name="nombre" class="input-txt" required>
+
+        <button type="submit" [disabled]="!formData.valid" class="auth-btn">Create Account</button>
+      </form>
+    </div>
+  </aside>
+
+  <div class="container borde1">
+    <div class="card">
+      <button routerLink="/visualizar" type="button" class="btn btn-outline-info visualizar">Registrar Cursos</button>
+      <button routerLink="/signup" type="button" class="btn btn-outline-info registrar">Registrar Estudiante</button>
+      <button routerLink="/visualizar" type="button" class="btn btn-outline-info registrar">Registrar Profesor</button>
+      <button routerLink="/registrarCursos" type="button" class="btn btn-outline-info registrar">Inscribir Curso</button>
+    </div>
+  </div>
+
+
+</body>
+
+
