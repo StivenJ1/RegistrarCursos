@@ -13,17 +13,16 @@
               <tr>
                 <th class="tableHead">Curso</th>
                 <th class="tableHead">Id</th>
-                <th class="tableHead">Profesor</th>
+                <th class="tableHead">Cantidad de estudiantes</th>
                 <th></th>
               </tr>
             </thead>
             <tbody>
               <tr *ngFor="let curso of cursos">
-                <td>{{curso.nombreCurso}}</td>
-                <td>{{curso.codigo}}</td>
-                <td>{{curso.profesor}}</td>
+                <td>{{curso.curso}}</td>
+                <td>{{curso.id}}</td>
+                <td>{{curso.numero}}</td>
                 <td>
-                  <i (click)="eliminarCursos2(usuario.uid, curso.id)" class="fas fa-trash fa-lg text-danger"></i>
                 </td>
               </tr>
             </tbody>
@@ -37,8 +36,8 @@
 
   <div class="container borde1">
     <div class="card contenedor">
-      <button routerLink="/inscribir" type="button" class="btn btn-outline-info visualizar">Inscribir Curso</button>
-      <button routerLink="/email-login" type="button" class="btn btn-outline-info ">Salir</button>
+
+      <button routerLink="/email-login" type="button" class="btn btn-outline-info visualizar">Salir</button>
     </div>
   </div>
 

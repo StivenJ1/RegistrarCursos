@@ -1,13 +1,13 @@
+import { Component, OnInit } from '@angular/core';
 import { UserServicesService } from './../services/user-services.service';
 import { AuthService } from './../auth.service';
-import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-profile-component',
-  templateUrl: './profile-component.component.html',
-  styleUrls: ['./profile-component.component.css']
+  selector: 'app-profile-profesor',
+  templateUrl: './profile-profesor.component.html',
+  styleUrls: ['./profile-profesor.component.css']
 })
-export class ProfileComponentComponent implements OnInit {
+export class ProfileProfesorComponent implements OnInit {
   estudiantes: any[] = [];
   public x: any;
   cursos: any[] = [];
@@ -61,20 +61,8 @@ export class ProfileComponentComponent implements OnInit {
     });
   }
 
-  eliminarCursos(id: string) {
-    this._registroService.eliminarCursos(id).then(() => {
-      console.log('curso eliminado');
-    }).catch(error => {
-      console.error(error);
-    })
-  }
 
-  eliminarCursos2(uid: string, id: string) {
-    this._registroService.eliminarCursos2(uid,id).then(() => {
-      console.log('curso eliminado');
-    }).catch(error => {
-      console.error(error);
-    })
-  }
+
 
 }
+

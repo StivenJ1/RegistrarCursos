@@ -92,4 +92,5 @@ export class RegistrarCursosComponent implements OnInit {
       this.router.navigate(['/profile']);
     })
   }
+
 }

@@ -22,6 +22,9 @@ import { RegistrarCursosComponent } from './registrar-cursos/registrar-cursos.co
 import { provideDatabase,getDatabase } from '@angular/fire/database';
 import { provideRemoteConfig,getRemoteConfig } from '@angular/fire/remote-config';
 import { RegistrarInscribirComponent } from './registrar-inscribir/registrar-inscribir.component';
+import { InscribirCursosComponent } from './inscribir-cursos/inscribir-cursos.component';
+import { RegistrarProfesorComponent } from './registrar-profesor/registrar-profesor.component';
+import { ProfileProfesorComponent } from './profile-profesor/profile-profesor.component';
 
 
 const firebaseConfig = {
@@ -43,7 +46,10 @@ const firebaseConfig = {
     ProfileComponentComponent,
     VisualizarComponent,
     RegistrarCursosComponent,
-    RegistrarInscribirComponent
+    RegistrarInscribirComponent,
+    InscribirCursosComponent,
+    RegistrarProfesorComponent,
+    ProfileProfesorComponent
   ],
   imports: [
     BrowserModule,

@@ -73,16 +73,10 @@ button {
 
 .visualizar {
   margin-top: 35%;
-  background: #ECECEC;
-  background-size: 25px;
-  color: rgb(101, 101, 248);
+
 }
 
-.registrar {
-  background: #ECECEC;
-  background-size: 25px;
-  color: rgb(101, 101, 248);
-}
+
 
 .create-account-txt {
   text-align: center;

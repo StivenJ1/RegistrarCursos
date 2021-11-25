@@ -114,16 +114,13 @@ button {
 }
 
 .visualizar {
-  margin-top: 35%;
-  background: #ECECEC;
-  background-size: 25px;
-  color: rgb(101, 101, 248);
+  margin-top: 70%;
+
 }
 
 .registrar {
-  background: #ECECEC;
-  background-size: 25px;
-  color: rgb(101, 101, 248);
+margin-top: 20%;
+
 }
 
 .create-account-txt {

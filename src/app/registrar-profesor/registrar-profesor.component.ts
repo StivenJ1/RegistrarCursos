@@ -1,13 +1,18 @@
-import { FormGroup, FormBuilder } from '@angular/forms';
 import { Component, OnInit } from '@angular/core';
+
+
+import { FormGroup, FormBuilder } from '@angular/forms';
+
 import { AuthService } from '../auth.service';
 
 @Component({
-  selector: 'app-signup',
-  templateUrl: './sign-uppage.component.html',
-  styleUrls: ['./sign-uppage.component.css']
+  selector: 'app-registrar-profesor',
+  templateUrl: './registrar-profesor.component.html',
+  styleUrls: ['./registrar-profesor.component.css']
 })
-export class SignupComponent implements OnInit {
+export class RegistrarProfesorComponent implements OnInit {
+
+
   public email: any;
   public codigo: any;
   public password: any;
@@ -29,7 +34,7 @@ export class SignupComponent implements OnInit {
         formData.value.rol
       );
     }
+
+
   }
-
-
 }

@@ -8,6 +8,9 @@ import { EmailComponentComponent } from './email-component/email-component.compo
 import { VisualizarComponent } from './visualizar/visualizar.component';
 import { RegistrarCursosComponent } from './registrar-cursos/registrar-cursos.component';
 import { RegistrarInscribirComponent } from './registrar-inscribir/registrar-inscribir.component';
+import { InscribirCursosComponent } from './inscribir-cursos/inscribir-cursos.component';
+import { RegistrarProfesorComponent} from './registrar-profesor/registrar-profesor.component';
+import { ProfileProfesorComponent } from './profile-profesor/profile-profesor.component';
 
 
 const routes: Routes = [
@@ -20,7 +23,10 @@ const routes: Routes = [
   {path: 'visualizar', component: VisualizarComponent},
   {path: 'registrarCursos', component: RegistrarCursosComponent},
   {path: 'editarCurso/:id', component: RegistrarCursosComponent},
-  {path: 'Registrar-Inscribir', component:RegistrarInscribirComponent}
+  {path: 'Registrar-Inscribir', component:RegistrarInscribirComponent},
+  { path: 'inscribir', component:InscribirCursosComponent},
+  { path: 'registrarProfesor', component: RegistrarProfesorComponent},
+  { path: 'profileProfesor', component: ProfileProfesorComponent},
 ];
 
 @NgModule({

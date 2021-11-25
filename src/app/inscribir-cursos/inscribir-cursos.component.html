@@ -1,0 +1,22 @@
+<body>
+  <aside>
+    <div class="form-container">
+      <h2>Registrar Cursos</h2>
+      <form #formData='ngForm' (ngSubmit)="onSubmit(formData); formData.reset()">
+        <input type="text" placeholder="Nombre Curso" (ngModel)="nombreCurso" name="nombreCurso" class="input-txt" required>
+        <input type="text" placeholder="Codigo" (ngModel)="codigo" name="codigo" class="input-txt" required>
+        <input type="text" placeholder="profesor" (ngModel)="profesor" name="profesor" class="input-txt" required>
+
+
+        <button type="submit" [disabled]="!formData.valid" class="auth-btn">Guardar</button>
+      </form>
+    </div>
+  </aside>
+
+  <div class="container borde1">
+    <div class="card contenedor">
+      <button routerLink="/profile" type="button" class="btn btn-outline-info visualizar">Volver</button>
+    </div>
+  </div>
+
+</body>
